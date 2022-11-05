@@ -1,0 +1,672 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,400;0,500;0,700;1,400&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap");
+
+html {
+  font-family: Montserrat, sans-serif;
+  background-color: #fcfdfe;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  line-height: 1.5;
+  min-width: 320px;
+}
+
+/* Globals */
+.container {
+  position: relative;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.highlight {
+  color: #ef4b6c;
+}
+
+.btn {
+  text-decoration: none;
+  height: 35px;
+  display: inline-block;
+  background-color: #fff;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50px;
+  padding: 0 1.5rem;
+  text-transform: uppercase;
+  font-weight: 500;
+  letter-spacing: 0.1rem;
+  color: #5238b1;
+  font-size: 12px;
+}
+
+.enum {
+  list-style-type: "-";
+  list-style-position: inside;
+  margin-top: 0.5rem;
+}
+
+.enum li {
+  font-size: 0.75rem;
+  margin-bottom: 0.2rem;
+}
+
+.enum li span {
+  padding-left: 1rem;
+}
+
+.enum em {
+  font-weight: 700;
+}
+
+/* End Globals */
+
+/* Main Header or Main Menu */
+.menu {
+  position: absolute;
+  z-index: 4;
+  top: 0;
+  right: 0;
+  left: 0;
+  height: 64px;
+  text-align: right;
+}
+
+.menu .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5rem 1rem;
+}
+
+.logo img {
+  width: 30px;
+  height: auto;
+  cursor: pointer;
+}
+
+.menu li {
+  display: inline-block;
+  margin-left: 1rem;
+}
+
+.menu a {
+  cursor: pointer;
+  font-weight: 500;
+  letter-spacing: 0.1rem;
+  font-size: 12px;
+  text-transform: uppercase;
+  color: #fff;
+  text-decoration: none;
+}
+
+/* END Main Header or Main Menu */
+.hero-section-overlay {
+  width: 100%;
+  height: 200px;
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  left: 0;
+
+  background-image: linear-gradient(
+    180deg,
+    rgba(13, 0, 32, 0.3) -40px,
+    rgba(53, 0, 58, 0) 200px
+  );
+}
+
+.hero {
+  background-image: linear-gradient(to top right, #450b7c, #563cc9, #49e9fb);
+  height: 100vh;
+  color: #fff;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero .mask {
+  position: absolute;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  min-width: 1000px;
+}
+
+.hero .container {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero .content {
+  text-align: center;
+  z-index: 2;
+  padding: 1rem;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.typewritter {
+  font-size: 1.25rem;
+}
+
+.connect-btn {
+  margin-top: 4rem;
+  opacity: 0.8;
+}
+
+.connect-btn:hover {
+  opacity: 1;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Playfair Display", serif;
+  font-weight: bold;
+}
+
+main {
+  position: relative;
+  text-align: center;
+}
+
+.main-section {
+  padding: 1rem;
+  margin-bottom: 3rem;
+  position: relative;
+}
+
+.section-title {
+  margin-bottom: 3rem;
+  position: relative;
+}
+
+.section-title h2 {
+  font-size: 1.5rem;
+  padding: 1.5rem;
+}
+
+.section-title:before {
+  width: 45px;
+  height: 3px;
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  background-color: #ef4b6c;
+  transform: translateX(-50%);
+}
+
+.section-contents {
+  text-align: left;
+}
+
+.section-item {
+  text-align: left;
+
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 70px 140px 0 rgb(130 136 171 / 20%);
+  border-radius: 15px;
+
+  z-index: 1;
+  margin-bottom: 2rem;
+  overflow: hidden;
+}
+
+.section-item .details {
+  padding: 1rem;
+}
+
+.details h3 {
+  font-family: Montserrat, sans-serif;
+  text-align: center;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+}
+
+.details h4 {
+  font-family: Montserrat, sans-serif;
+  font-size: 0.75rem;
+  margin-top: 1rem;
+  text-transform: uppercase;
+  color: rgb(106, 106, 106);
+}
+
+.section-item .img-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100px;
+  padding: 2rem;
+}
+
+/* Work Experience */
+#work-experience .img-section {
+  height: 100px;
+  max-height: 100px;
+}
+
+#accenture .img-section {
+  background: #fff; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to bottom,
+    #845ec2,
+    #fff
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to bottom,
+    #845ec2,
+    #fff
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+#accenture img {
+  height: 50px;
+}
+
+#istor .img-section {
+  background: #e6ce33; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to bottom,
+    #e6ce33,
+    #fff
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to bottom,
+    #e6ce33,
+    #fff
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+#istor img {
+  height: 150px;
+}
+
+#mwi .img-section {
+  background: #fff; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to bottom,
+    #64b3f4,
+    #fff
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to bottom,
+    #64b3f4,
+    #fff
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+#mwi img {
+  height: 50px;
+}
+
+.company-details {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.company-name {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+}
+
+.company-details .date {
+  font-size: 0.75rem;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+}
+
+.company-description {
+  text-align: center;
+  font-size: 0.75rem;
+  font-style: italic;
+}
+/* End Work Experience */
+
+/* For Skills Section */
+
+#skills ul {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+}
+
+#skills li img {
+  height: 60px;
+  width: auto;
+}
+
+#skills li p {
+  font-size: 0.75rem;
+  color: #5d6e80;
+}
+
+.skills-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  gap: 1rem;
+  display: none;
+}
+
+.skills-column {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.skills-column div {
+  background-color: #fff;
+  border-radius: 1rem;
+  padding: 2rem;
+  box-shadow: 0 70px 140px 0 rgb(130 136 171 / 20%);
+
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.skills-column img {
+  height: 60px;
+  width: auto;
+}
+
+#mongodb img,
+#mongodb-mobile img {
+  width: 100%;
+  max-width: 100px;
+  height: auto;
+}
+
+.adjusted-img {
+  width: 100%;
+  max-width: 75px;
+  height: auto;
+}
+
+.skills-column p {
+  margin-top: 1rem;
+}
+
+/* END - For Skills Section */
+
+/* Technical Experience */
+
+#technical-experience img {
+  height: 150px;
+}
+
+#b2b-portal .img-section {
+  background-color: #56565b;
+}
+
+#b2b-wos .img-section {
+  background-color: #e2e2e2;
+}
+
+#amzentrix .img-section {
+  background-color: #028b9e;
+}
+
+#kronos .img-section {
+  background-color: #2cb4ff;
+}
+
+#dawang .img-section {
+  background-color: #53bcbd;
+}
+
+#hupu .img-section {
+  background-color: #5d6e80;
+}
+/* End Technical Experience */
+
+/* For Education Section */
+
+.school-details {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1rem;
+  font-size: 0.8rem;
+}
+
+.school-details .date {
+  text-align: right;
+}
+
+.school-details .location {
+  color: #fff;
+  font-size: 0.6rem;
+}
+
+#langara {
+  background: #ff512f; /* fallback for old browsers */
+
+  background: -webkit-linear-gradient(
+    to top,
+    #f09819,
+    #ff512f
+  ); /* Chrome 10-25, Safari 5.1-6 */
+
+  background: linear-gradient(
+    to top,
+    #f09819,
+    #ff512f
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  /* color: #fff; */
+}
+
+#iacademy {
+  background: #2193b0; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to top,
+    #6dd5ed,
+    #2193b0
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to top,
+    #6dd5ed,
+    #2193b0
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+#iacademy img {
+  max-height: 100px;
+}
+
+/* END For Education Section */
+
+/* Footer */
+#footer {
+  padding: 2rem 1rem;
+  text-align: center;
+}
+/* End Footer */
+
+/* Floating Msg */
+.floating-msg {
+  position: fixed;
+  background-color: #ef4b6c;
+  width: 60px;
+  height: 60px;
+  z-index: 100;
+  bottom: 1rem;
+  right: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+  border-radius: 50%;
+  cursor: pointer;
+  opacity: 0;
+}
+
+.floating-msg a {
+  color: #fff;
+}
+/* End Floating Msg */
+
+@media screen and (min-width: 500px) {
+  #skills ul {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+@media screen and (min-width: 700px) {
+  /* Technical Experience */
+  #technical-experience .section-contents {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+  }
+  /* End Technical Experience */
+
+  #education .section-contents {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+  }
+
+  #education .section-item {
+    margin-bottom: 0;
+    display: flex;
+    flex-direction: column;
+  }
+
+  #education .section-item .details {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-grow: 1;
+  }
+
+  #education h3 {
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .container {
+    max-width: 800px;
+    margin: auto;
+  }
+
+  .menu a {
+    opacity: 0.8;
+  }
+
+  .menu a:hover {
+    opacity: 1;
+  }
+
+  .btn {
+    height: 45px;
+    padding: 0 3rem;
+  }
+
+  .main-section {
+    margin-bottom: 6rem;
+  }
+
+  .section-title h2 {
+    font-size: 2.5rem;
+  }
+
+  /* Hero Section */
+  .hero h1 {
+    font-size: 4rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+  }
+
+  .typewritter {
+    font-size: 2rem;
+  }
+  /* END Hero Section */
+
+  /* Work Experience */
+
+  #work-experience .section-item {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  #work-experience .img-section {
+    box-sizing: border-box;
+    height: 100%;
+    max-height: 100%;
+  }
+
+  #accenture .img-section {
+    background: -webkit-linear-gradient(to right, #845ec2, #fff);
+    background: linear-gradient(to right, #845ec2, #fff);
+  }
+
+  #istor .img-section {
+    background: -webkit-linear-gradient(to left, #e6ce33, #fff);
+    background: linear-gradient(to left, #e6ce33, #fff);
+    grid-column: 2;
+  }
+
+  /* This will reverse the flow of the grid */
+  #istor .details {
+    grid-column: 1;
+    grid-row: 1;
+  }
+
+  #mwi {
+    height: 400px;
+  }
+
+  #mwi .img-section {
+    background: -webkit-linear-gradient(to right, #64b3f4, #fff);
+    background: linear-gradient(to right, #64b3f4, #fff);
+  }
+
+  #work-experience .details {
+    padding: 4rem 2rem;
+  }
+  /* End Work Experience */
+
+  /* Skills */
+  #skills ul {
+    display: none;
+  }
+
+  #skills .skills-list {
+    display: grid;
+  }
+  /* End Skills */
+
+  /* Technical Experience */
+  #technical-experience .section-contents {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  /*END Technical Experience */
+
+  /* EDUCATION */
+  #education .school-details {
+    margin-top: 1rem;
+  }
+  /* END EDUCATION */
+
+  /* Floating Msg */
+  .floating-msg {
+    bottom: 2rem;
+    right: 2rem;
+  }
+
+  /* End Floating Msg */
+}
